@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | adidas Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation (same as other pages) -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="bg-black text-white text-xs py-2">
+            <div class="container mx-auto px-4 flex justify-end space-x-4">
+                <a href="#" class="hover:underline">Help</a>
+                <a href="#" class="hover:underline">Returns</a>
+                <a href="#" class="hover:underline">Order Tracker</a>
+                <a href="#" class="hover:underline">Sign Up</a>
+            </div>
+        </div>
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold">
+                    <img src="https://www.adidas.co.id/media/logo/stores/1/adidas-logo.png" alt="adidas Logo" class="h-8">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/pria.html" class="text-gray-700 hover:text-black">PRIA</a>
+                    <a href="/wanita.html" class="text-gray-700 hover:text-black">WANITA</a>
+                    <a href="/anak.html" class="text-gray-700 hover:text-black">ANAK</a>
+                    <a href="/olahraga.html" class="text-gray-700 hover:text-black">OLAHRAGA</a>
+                    <a href="/brands.html" class="text-gray-700 hover:text-black">BRANDS</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:block">
+                        <input type="text" placeholder="Search" class="px-4 py-2 border rounded-full text-sm">
+                    </div>
+                    <a href="/cart.html" class="text-gray-700 relative">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-24 container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">Keranjang Belanja</h1>
+
+        <!-- Cart Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Cart Items -->
+            <div class="lg:col-span-2">
+                <!-- Cart Item 1 -->
+                <div class="bg-white p-6 mb-4 rounded-lg shadow-sm">
+                    <div class="flex space-x-4">
+                        <img src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/i/e/ie3402_2_footwear_photography_side20lateral20view_grey.jpg" 
+                             alt="Handball Spezial Shoes" 
+                             class="w-24 h-24 object-cover">
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h3 class="font-medium">Handball Spezial Shoes</h3>
+                                    <p class="text-sm text-gray-500">Pria Originals</p>
+                                    <p class="text-sm text-gray-500">Size: UK 8</p>
+                                    <p class="text-sm text-gray-500">Color: Core Black</p>
+                                </div>
+                                <button class="text-gray-400 hover:text-black">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center">
+                                <div class="flex items-center space-x-2">
+                                    <button class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-gray-100">-</button>
+                                    <span class="w-8 text-center">1</span>
+                                    <button class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-gray-100">+</button>
+                                </div>
+                                <div class="font-bold">Rp. 1.700.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="bg-white p-6 mb-4 rounded-lg shadow-sm">
+                    <div class="flex space-x-4">
+                        <img src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/i/f/if9531_2_footwear_photography_side20lateral20view_grey.jpg" 
+                             alt="Samba OG Shoes" 
+                             class="w-24 h-24 object-cover">
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h3 class="font-medium">Samba OG Shoes</h3>
+                                    <p class="text-sm text-gray-500">Pria Originals</p>
+                                    <p class="text-sm text-gray-500">Size: UK 7.5</p>
+                                    <p class="text-sm text-gray-500">Color: Cloud White</p>
+                                </div>
+                                <button class="text-gray-400 hover:text-black">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center">
+                                <div class="flex items-center space-x-2">
+                                    <button class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-gray-100">-</button>
+                                    <span class="w-8 text-center">1</span>
+                                    <button class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-gray-100">+</button>
+                                </div>
+                                <div class="font-bold">Rp. 2.000.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-lg shadow-sm sticky top-24">
+                    <h2 class="text-xl font-bold mb-4">Ringkasan Order</h2>
+                    
+                    <!-- Subtotal -->
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-600">Subtotal</span>
+                        <span>Rp. 3.700.000</span>
+                    </div>
+
+                    <!-- Shipping -->
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-600">Pengiriman</span>
+                        <span>Gratis</span>
+                    </div>
+
+                    <!-- Tax -->
+                    <div class="flex justify-between mb-4">
+                        <span class="text-gray-600">Pajak</span>
+                        <span>Rp. 370.000</span>
+                    </div>
+
+                    <!-- Total -->
+                    <div class="flex justify-between font-bold text-lg border-t pt-4 mb-6">
+                        <span>Total</span>
+                        <span>Rp. 4.070.000</span>
+                    </div>
+
+                    <!-- Promo Code -->
+                    <div class="mb-6">
+                        <div class="flex space-x-2">
+                            <input type="text" 
+                                   placeholder="Kode Promo" 
+                                   class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                            <button class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Button -->
+                    <button class="w-full bg-black text-white py-4 rounded-lg hover:bg-gray-800">
+                        CHECKOUT
+                    </button>
+
+                    <!-- Secure Checkout -->
+                    <div class="mt-4 text-center text-sm text-gray-500">
+                        <i class="fas fa-lock mr-2"></i>
+                        Pembayaran Aman
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="mt-4 flex justify-center space-x-2">
+                        <i class="fab fa-cc-visa text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-mastercard text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-amex text-2xl text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue Shopping -->
+        <div class="mt-8 text-center">
+            <a href="/" class="text-black hover:underline">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Lanjutkan Belanja
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer (same as other pages) -->
+    <footer class="bg-black text-white py-16 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">PRODUCTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shoes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Clothing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">SPORTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Running</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Football</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Training</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">COMPANY INFO</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">FOLLOW US</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 adidas Indonesia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
