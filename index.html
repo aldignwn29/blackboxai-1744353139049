@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adidas Official Website | adidas Indonesia</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-slide {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            transform: translateX(100%);
+        }
+        .hero-slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            height: 600px;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <!-- Top Bar -->
+        <div class="bg-black text-white text-xs py-2">
+            <div class="container mx-auto px-4 flex justify-end space-x-4">
+                <a href="#" class="hover:underline">Help</a>
+                <a href="#" class="hover:underline">Returns</a>
+                <a href="#" class="hover:underline">Order Tracker</a>
+                <a href="#" class="hover:underline">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="/" class="text-2xl font-bold">
+                    <img src="https://www.adidas.co.id/media/logo/stores/1/adidas-logo.png" alt="adidas Logo" class="h-8">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/pria.html" class="text-gray-700 hover:text-black">PRIA</a>
+                    <a href="/wanita.html" class="text-gray-700 hover:text-black">WANITA</a>
+                    <a href="/anak.html" class="text-gray-700 hover:text-black">ANAK</a>
+                    <a href="/olahraga.html" class="text-gray-700 hover:text-black">OLAHRAGA</a>
+                    <a href="/brands.html" class="text-gray-700 hover:text-black">BRANDS</a>
+                </div>
+
+                <!-- Search and Cart -->
+                <div class="flex items-center space-x-4">
+                    <form action="/search.html" class="hidden md:block search-form">
+                        <input type="text" 
+                               placeholder="Search" 
+                               class="px-4 py-2 border rounded-full text-sm w-64 focus:outline-none focus:ring-2 focus:ring-black"
+                               id="searchInput">
+                    </form>
+                    <a href="/membership.html" class="text-gray-700 hover:text-black mr-4">
+                        <i class="fas fa-user-circle text-xl"></i>
+                    </a>
+                    <a href="/cart.html" class="text-gray-700 relative">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    </a>
+                    <button class="md:hidden text-gray-700 mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+        <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+            <div class="p-4">
+                <div class="flex justify-end">
+                    <button class="mobile-menu-close">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <nav class="mt-8">
+                    <a href="/pria.html" class="block py-2 text-lg">PRIA</a>
+                    <a href="/wanita.html" class="block py-2 text-lg">WANITA</a>
+                    <a href="/anak.html" class="block py-2 text-lg">ANAK</a>
+                    <a href="/olahraga.html" class="block py-2 text-lg">OLAHRAGA</a>
+                    <a href="/brands.html" class="block py-2 text-lg">BRANDS</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="mt-24">
+        <!-- Hero Slider -->
+        <section class="relative">
+            <div class="slider-container">
+                <!-- Navigation Arrows -->
+                <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white w-12 h-12 flex items-center justify-center rounded-full z-10" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white w-12 h-12 flex items-center justify-center rounded-full z-10" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Slides -->
+                <div class="hero-slide active">
+                    <img src="https://www.adidas.co.id/media/scandiweb/slider/g/l/global-adizero_aruku-originals-ss25-launch-hp-banner_hero_2-d_1.jpg" alt="ADIZERO ARUKU" class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h1 class="text-5xl font-bold mb-4">ADIZERO ARUKU</h1>
+                            <p class="text-xl mb-6">Didesain untuk hidup yang terus beraktivitas</p>
+                            <a href="#" class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition">Beli sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="https://www.adidas.co.id/media/scandiweb/slider/5/5/5542956_ss25_slides_masthead_dt_2880x1280_1.jpg" alt="Summer Collection" class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h1 class="text-5xl font-bold mb-4">Melangkah menuju musim panas</h1>
+                            <p class="text-xl mb-6">Lengkapi koleksimu dengan item stylish ini.</p>
+                            <a href="#" class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition">BELI SEKARANG</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="https://www.adidas.co.id/media/scandiweb/slider/r/a/rapidmove-adv-mh-d-2880x1280.png" alt="RAPIDMOVE ADV 2" class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h1 class="text-5xl font-bold mb-4">RAPIDMOVE ADV 2</h1>
+                            <p class="text-xl mb-6">Made for HIIT Workouts</p>
+                            <a href="#" class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation Dots -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-100"></button>
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50"></button>
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50"></button>
+            </div>
+        </section>
+
+        <!-- What's Hot Section -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="text-2xl font-bold mb-8">WHAT'S HOT</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hot Item 1 -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/RAYA-FULL-PRICE-Teaser_Carousel_1050x1400_1.jpg" alt="Hot Item 1" class="w-full h-[400px] object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">SAMBUT HARI RAYA</h3>
+                            <p class="mb-4">Tingkatkan gaya Hari Raya-mu dengan koleksi adidas!</p>
+                            <a href="#" class="text-white border-b-2 border-transparent hover:border-white transition-all">BELANJA SEKARANG</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hot Item 2 -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/aSMC-TC-workout-wardrobe.jpg" alt="Hot Item 2" class="w-full h-[400px] object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">adidas by Stella McCartney</h3>
+                            <p class="mb-4">Strength With Purpose</p>
+                            <a href="#" class="text-white border-b-2 border-transparent hover:border-white transition-all">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hot Item 3 -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/SL_72-ALWAYS-ON-TC-1050x1400.png" alt="Hot Item 3" class="w-full h-[400px] object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">SL 72</h3>
+                            <p class="mb-4">A coveted classic since the 70s</p>
+                            <a href="#" class="text-white border-b-2 border-transparent hover:border-white transition-all">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Products Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-8">Produk Terbaik adidas</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white p-4 rounded-lg group">
+                        <a href="/product-detail.html" class="block">
+                            <div class="relative overflow-hidden mb-4">
+                                <img src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/i/e/ie3402_2_footwear_photography_side20lateral20view_grey.jpg" 
+                                     alt="Handball Spezial Shoes" 
+                                     class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                            </div>
+                        </a>
+                        <div class="text-sm text-gray-600 mb-1">Pria Originals</div>
+                        <h3 class="font-medium mb-2">Handball Spezial Shoes</h3>
+                        <div class="text-lg font-bold">Rp. 1.700.000</div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="bg-white p-4 rounded-lg group">
+                        <div class="relative overflow-hidden mb-4">
+                            <img src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/i/f/if9531_2_footwear_photography_side20lateral20view_grey.jpg" 
+                                 alt="Samba OG Shoes" 
+                                 class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="text-sm text-gray-600 mb-1">Pria Originals</div>
+                        <h3 class="font-medium mb-2">Samba OG Shoes</h3>
+                        <div class="text-lg font-bold">Rp. 2.000.000</div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="bg-white p-4 rounded-lg group">
+                        <div class="relative overflow-hidden mb-4">
+                            <img src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/j/s/js3041_1_footwear_photography_side20lateral20center20view_grey.jpg" 
+                                 alt="Gazelle Real Madrid" 
+                                 class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="text-sm text-gray-600 mb-1">Pria Sepak Bola</div>
+                        <h3 class="font-medium mb-2">Gazelle Real Madrid</h3>
+                        <div class="text-lg font-bold">Rp. 1.700.000</div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="bg-white p-4 rounded-lg group">
+                        <div class="relative overflow-hidden mb-4">
+                            <img src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/j/s/js3042_1_footwear_photography_side20lateral20center20view_grey.jpg" 
+                                 alt="Gazelle Arsenal" 
+                                 class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="text-sm text-gray-600 mb-1">Pria Sepak Bola</div>
+                        <h3 class="font-medium mb-2">Gazelle Arsenal</h3>
+                        <div class="text-lg font-bold">Rp. 1.700.000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">PRODUCTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shoes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Clothing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">SPORTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Running</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Football</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Training</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">COMPANY INFO</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">FOLLOW US</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 adidas Indonesia. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
