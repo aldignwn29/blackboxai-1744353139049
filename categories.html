@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | adidas Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="bg-black text-white text-xs py-2">
+            <div class="container mx-auto px-4 flex justify-end space-x-4">
+                <a href="#" class="hover:underline">Help</a>
+                <a href="#" class="hover:underline">Returns</a>
+                <a href="#" class="hover:underline">Order Tracker</a>
+                <a href="#" class="hover:underline">Sign Up</a>
+            </div>
+        </div>
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold">
+                    <img src="https://www.adidas.co.id/media/logo/stores/1/adidas-logo.png" alt="adidas Logo" class="h-8">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/pria.html" class="text-gray-700 hover:text-black">PRIA</a>
+                    <a href="/wanita.html" class="text-gray-700 hover:text-black">WANITA</a>
+                    <a href="/anak.html" class="text-gray-700 hover:text-black">ANAK</a>
+                    <a href="/olahraga.html" class="text-gray-700 hover:text-black">OLAHRAGA</a>
+                    <a href="/brands.html" class="text-gray-700 hover:text-black">BRANDS</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <form action="/search.html" class="hidden md:block search-form">
+                        <input type="text" 
+                               placeholder="Search" 
+                               class="px-4 py-2 border rounded-full text-sm w-64 focus:outline-none focus:ring-2 focus:ring-black"
+                               id="searchInput">
+                    </form>
+                    <a href="/membership.html" class="text-gray-700 hover:text-black">
+                        <i class="fas fa-user-circle text-xl"></i>
+                    </a>
+                    <a href="/cart.html" class="text-gray-700 relative">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-32 container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">Kategori Produk</h1>
+
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Footwear Category -->
+            <div class="group relative overflow-hidden rounded-lg">
+                <img src="https://www.adidas.co.id/media/wysiwyg/running-ss24-ultraboost-light-3-hp-tc-d.jpg" 
+                     alt="Footwear" 
+                     class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+                    <div class="p-6">
+                        <h2 class="text-white text-2xl font-bold mb-2">Footwear</h2>
+                        <div class="space-y-2">
+                            <a href="#" class="block text-white hover:underline">Running Shoes</a>
+                            <a href="#" class="block text-white hover:underline">Sneakers</a>
+                            <a href="#" class="block text-white hover:underline">Football Boots</a>
+                            <a href="#" class="block text-white hover:underline">Training Shoes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clothing Category -->
+            <div class="group relative overflow-hidden rounded-lg">
+                <img src="https://www.adidas.co.id/media/wysiwyg/football-ss24-arsenal-away-hp-tc-d.jpg" 
+                     alt="Clothing" 
+                     class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+                    <div class="p-6">
+                        <h2 class="text-white text-2xl font-bold mb-2">Clothing</h2>
+                        <div class="space-y-2">
+                            <a href="#" class="block text-white hover:underline">T-Shirts</a>
+                            <a href="#" class="block text-white hover:underline">Jerseys</a>
+                            <a href="#" class="block text-white hover:underline">Jackets</a>
+                            <a href="#" class="block text-white hover:underline">Pants</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessories Category -->
+            <div class="group relative overflow-hidden rounded-lg">
+                <img src="https://www.adidas.co.id/media/wysiwyg/running-ss24-supernova-rise-launch-hp-tc-d.jpg" 
+                     alt="Accessories" 
+                     class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end">
+                    <div class="p-6">
+                        <h2 class="text-white text-2xl font-bold mb-2">Accessories</h2>
+                        <div class="space-y-2">
+                            <a href="#" class="block text-white hover:underline">Bags</a>
+                            <a href="#" class="block text-white hover:underline">Socks</a>
+                            <a href="#" class="block text-white hover:underline">Caps</a>
+                            <a href="#" class="block text-white hover:underline">Equipment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Collections -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold mb-8">Koleksi Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Collection 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/originals-ss24-spezial-launch-hp-tc-d.jpg" 
+                         alt="Originals Collection" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Originals Collection</h3>
+                        <p class="text-gray-600 text-sm mb-4">Iconic styles reimagined for today</p>
+                        <a href="#" class="text-black hover:underline">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Collection 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/football-ss24-x-crazyfast-elite-launch-hp-tc-d.jpg" 
+                         alt="Football Collection" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Football Collection</h3>
+                        <p class="text-gray-600 text-sm mb-4">Performance gear for the beautiful game</p>
+                        <a href="#" class="text-black hover:underline">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Collection 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/training-ss24-techfit-launch-hp-tc-d.jpg" 
+                         alt="Training Collection" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Training Collection</h3>
+                        <p class="text-gray-600 text-sm mb-4">Engineered for peak performance</p>
+                        <a href="#" class="text-black hover:underline">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Collection 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://www.adidas.co.id/media/wysiwyg/running-ss24-solarglide-6-launch-hp-tc-d.jpg" 
+                         alt="Running Collection" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Running Collection</h3>
+                        <p class="text-gray-600 text-sm mb-4">Innovation for every runner</p>
+                        <a href="#" class="text-black hover:underline">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">PRODUCTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shoes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Clothing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">SPORTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Running</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Football</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Training</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">COMPANY INFO</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">FOLLOW US</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 adidas Indonesia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
