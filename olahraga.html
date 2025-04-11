@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olahraga | adidas Indonesia</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <!-- Top Bar -->
+        <div class="bg-black text-white text-xs py-2">
+            <div class="container mx-auto px-4 flex justify-end space-x-4">
+                <a href="#" class="hover:underline">Help</a>
+                <a href="#" class="hover:underline">Returns</a>
+                <a href="#" class="hover:underline">Order Tracker</a>
+                <a href="#" class="hover:underline">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold">
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" alt="adidas Logo" class="h-8">
+                </a>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="/pria.html" class="text-gray-700 hover:text-black">PRIA</a>
+                    <a href="/wanita.html" class="text-gray-700 hover:text-black">WANITA</a>
+                    <a href="/anak.html" class="text-gray-700 hover:text-black">ANAK</a>
+                    <a href="/olahraga.html" class="text-gray-700 hover:text-black font-semibold">OLAHRAGA</a>
+                    <a href="/brands.html" class="text-gray-700 hover:text-black">BRANDS</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:block">
+                        <input type="text" placeholder="Search" class="px-4 py-2 border rounded-full text-sm">
+                    </div>
+                    <a href="/cart.html" class="text-gray-700">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                    </a>
+                    <button type="button" class="md:hidden text-gray-700 mobile-menu-button p-2 hover:bg-gray-100 rounded-lg" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden fixed top-[64px] left-0 w-full h-[calc(100vh-64px)] bg-white shadow-lg p-6 z-[100] mobile-nav md:hidden transition-all duration-300 ease-in-out transform translate-y-1 opacity-0">
+            <ul class="space-y-1">
+                <li><a href="/pria.html" class="block py-3 text-gray-700 hover:text-black border-b border-gray-100">PRIA</a></li>
+                <li><a href="/wanita.html" class="block py-3 text-gray-700 hover:text-black border-b border-gray-100">WANITA</a></li>
+                <li><a href="/anak.html" class="block py-3 text-gray-700 hover:text-black border-b border-gray-100">ANAK</a></li>
+                <li><a href="/olahraga.html" class="block py-3 text-gray-700 hover:text-black border-b border-gray-100">OLAHRAGA</a></li>
+                <li><a href="/brands.html" class="block py-3 text-gray-700 hover:text-black">BRANDS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-32 pb-16">
+        <h1 class="text-4xl font-bold mb-8">Olahraga</h1>
+
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Running -->
+            <div class="relative group overflow-hidden rounded-lg">
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/running-ss22-ultraboost-launch-hp-teaser-carousel-d_tcm221-884653.jpg" alt="Running" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Running</h3>
+                        <a href="#" class="inline-block bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100 transition">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training -->
+            <div class="relative group overflow-hidden rounded-lg">
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/training-ss22-yogamat-launch-hp-teaser-carousel-d_tcm221-884655.jpg" alt="Training" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Training</h3>
+                        <a href="#" class="inline-block bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100 transition">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Football -->
+            <div class="relative group overflow-hidden rounded-lg">
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/football-fw21-predator-launch-hp-teaser-carousel-d_tcm221-884657.jpg" alt="Football" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Football</h3>
+                        <a href="#" class="inline-block bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100 transition">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" alt="Product 1" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Ultraboost Running Shoes</h3>
+                    <p class="text-gray-600 mb-2">Running</p>
+                    <p class="font-bold">Rp 2.999.000</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" alt="Product 2" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Training Mat</h3>
+                    <p class="text-gray-600 mb-2">Training</p>
+                    <p class="font-bold">Rp 499.000</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" alt="Product 3" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Predator Football Boots</h3>
+                    <p class="text-gray-600 mb-2">Football</p>
+                    <p class="font-bold">Rp 1.899.000</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" alt="Product 4" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Training Shorts</h3>
+                    <p class="text-gray-600 mb-2">Training</p>
+                    <p class="font-bold">Rp 399.000</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">PRODUCTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shoes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Clothing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">SPORTS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Running</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Training</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Football</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">COMPANY INFO</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">FOLLOW US</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 adidas Indonesia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
